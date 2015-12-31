@@ -1,0 +1,37 @@
+// COLORS
+$red: #f26649;
+$green: #02aa4f;
+$white: #F7F0F0;
+$darkBrown: #52403c;
+$lightBrown: #efe4d7;
+$brown: #b1847c;
+$dark: #484349;
+
+
+// FONTS
+$mainFont: 'Roboto', serif;
+$scriptFont: 'Satisfy', cursive;
+
+
+// Jekyll variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 300;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;

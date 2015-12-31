@@ -1,0 +1,39 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-3">
+        <ul class="contact-list">
+          <li>{{ site.address }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3 social-media">
+        <ul class="social-media-list">
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html %}
+          </li>
+          {% endif %} 
+
+          {% if site.fb_page %}
+          <li>
+            {% include icon-facebook.html %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2015 La Patrona Bakery Corp. All rights reserved.</p>
+    </div>
+
+  </div>
+
+</footer>

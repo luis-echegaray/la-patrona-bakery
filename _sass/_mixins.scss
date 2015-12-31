@@ -1,0 +1,29 @@
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@function rgbaFromHex($hex, $opacity) {
+	$red: red($hex);
+	$green: green($hex);
+	$blue: blue($hex);
+
+	@return rgba($red, $green, $blue, $opacity)
+}
+	
+@mixin headerStyles {
+	// background: -webkit-linear-gradient();
+	// background: -o-linear-gradient();
+	background: linear-gradient(to left, rgbaFromHex($red, .5), rgba(0, 0, 0, .25), rgbaFromHex($green, .35)),
+		url('../img/wood2.jpg');
+	background-size: cover;
+	height: 300px;
+}
