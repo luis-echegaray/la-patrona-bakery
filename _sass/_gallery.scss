@@ -15,9 +15,13 @@
 	img {
 		border: 3px solid $dark;
 		margin: 10px 0;
-		width: 150px;
-		height: 150px;
 		cursor: pointer;
+		width: 100px;
+		height: 100px;
+		@media (min-width: 400px) {
+			width: 150px;
+			height: 150px;
+		}
 		@media (min-width: 530px) {
 			width: 200px;
 			height: 200px;

@@ -19,7 +19,6 @@ fb_page: LaPatronaBakery
 # Build settings
 markdown: kramdown
 permalink: /:title
-paginate: 5
 
 #Google Maps API
 google_api_key: AIzaSyAvR32mUgbr43kCtPMxSMwQxZyCoFgfy48
