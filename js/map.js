@@ -6,7 +6,8 @@
 		var mapOptions = {
 			center: myLatlng,
 			zoom: 17,
-			scrollwheel: false
+			scrollwheel: false,
+			draggable: false
 		};
 
 		// Create a map object and specify the DOM element for display.
