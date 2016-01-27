@@ -51,7 +51,7 @@
 			margin: 0 auto;
 			background-color: rgba(0,0,0,.8);
 			border-radius: 10px;
-			padding: 100px;
+			padding: 10%;
 			display:flex;
 			justify-content: center;
 			align-items: center;
@@ -65,10 +65,14 @@
 				cursor: pointer;
 			}
 			img {
-				width: 300px;
-				height: 300px;
 				margin: 10px auto;
 				border: none;
+				width: 200px;
+				height: 200px;
+				@media (min-width: 400px) {
+					width: 300px;
+					height: 300px;
+				}
 			}
 		}
 	}
