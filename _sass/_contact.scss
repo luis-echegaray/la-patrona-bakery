@@ -1,4 +1,90 @@
 #map {
 	width: 100%;
 	height: 400px;
+	border-bottom: 2px solid $red;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	.info, 
+	.message {
+		width: 100%;
+		padding: 0 5%;
+	}
+	
+	@media (min-width: 800px){
+		flex-direction: row;
+		padding: 0 10%;
+		.info, 
+		.message {
+			width: 50%;
+		}
+	}
+	
+	.info {
+		margin-bottom: 30px;
+		h2 {
+			font-size: 1.3em;
+		}
+		h4 {
+			font-family: $mainFont;
+			color: $green;
+			font-size: 1em;
+		}
+		a { 
+			color: $green;
+		}
+		i {
+			position: relative;
+			top: 7px;
+		}
+		p.top-space {
+			margin-top: 50px;
+		}
+
+		.hours {
+			display: flex;
+			max-width: 250px;
+			justify-content: space-between;
+			h4 {
+				font-size: 1.5em;
+				font-family: $scriptFont;
+			}
+		}
+	}
+	.message {
+		h3 {
+			font-family: $scriptFont;
+			color: $green;
+			font-size: 1.6em;
+		}
+		label {
+			display: block;
+			margin: 15px 0 5px;
+		}
+		input {
+			height: 30px;
+		}
+		input, 
+		textarea {
+			width: 100%;
+			border: 1px solid $brown;
+		}
+		button {
+			width: 100px;
+			color: $white;
+			background: $dark;
+			font-size: 1.25em;
+			font-family: $scriptFont;
+			padding: 7px 10px 5px;
+			margin-top: 15px;
+			border: none;
+			cursor: pointer;
+			&:hover {
+				color: $red;
+			}
+		}
+	}
 }

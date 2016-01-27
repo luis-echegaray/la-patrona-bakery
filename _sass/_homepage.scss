@@ -1,3 +1,68 @@
-.site-header {
+.home {
+	h1, 
+	h2 {
+		color: $green;
+		font-family: $scriptFont;
+		text-align: center;
+		@media (min-width: 1000px) {
+			text-align: left;
+		}
+	}
+	img {
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto; 
+	}
+	.text, 
+	.image {
+		width: 100%;
+		padding: 10px 0;
+		@media (min-width: 1000px) {
+			width: 50%;
+			padding: 0 15px;
+		}
+	}
+	.image {
+		text-align: center;
+	}
+}
+
+.intro, 
+.bread, 
+.roscas, 
+.other {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 2px solid $red;
+	padding: $spacing-unit*2 0;
+	@media (min-width: 1000px) {
+		flex-direction: row;
+		padding: $spacing-unit*2 $spacing-unit/1.5;
+	}
 	
+}
+
+.intro {
+	padding-top: 0;
+	@media (min-width: 1000px) {
+		padding-top: $spacing-unit*2;
+	}
+}
+.other {
+	padding-bottom: 0;
+	@media (min-width: 1000px) {
+		padding-bottom: $spacing-unit*2;
+	}
+}
+
+.bread, 
+.other {
+	.text {
+		order: 2;
+	}
+}
+
+.other {
+	border-bottom: none;
 }
