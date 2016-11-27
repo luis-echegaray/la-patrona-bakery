@@ -71,6 +71,7 @@
 		textarea {
 			width: 100%;
 			border: 1px solid $brown;
+			padding: 5px 10px;
 		}
 		button {
 			width: 100px;
@@ -78,7 +79,7 @@
 			background: $dark;
 			font-size: 1.25em;
 			font-family: $scriptFont;
-			padding: 7px 10px 5px;
+			padding: 10px 10px 5px;
 			margin-top: 15px;
 			border: none;
 			cursor: pointer;

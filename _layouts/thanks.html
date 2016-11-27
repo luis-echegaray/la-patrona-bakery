@@ -1,0 +1,36 @@
+---
+layout: map
+---
+
+<script src="{{ site.baseurl }}/js/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvR32mUgbr43kCtPMxSMwQxZyCoFgfy48&callback=initMap"></script>
+
+<div id="map"></div>
+
+<div class="page-content">
+  	<div class="contact">
+    	<div class="left info">
+			<h2>{{ site.address }}</h2>
+			<h4>
+				<a href="tel:{{ site.phone }}">
+					<i class="material-icons">phone</i>
+					{{ site.phone }}
+				</a>
+			</h4>
+			
+			<div class="hours">
+				<h4>Hours:</h4>
+				<p>Monday - Sunday
+				<br>5 am - 10 pm</p>
+			</div>
+			
+
+			<p class="top-space">Completa esta forma con la información correcta. Nos comunicaremos contigo lo mas pronto posible. Suscribete! Recibirás promociones todos los dias.</p>
+			<p>Llamanos Ahora para obtener mas información sobre nuestro servicio de Catering.</p>
+		</div>
+
+		<div class="right message">
+			{{ content }}
+		</div>
+  	</div>
+</div>

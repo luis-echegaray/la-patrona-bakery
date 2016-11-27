@@ -14,7 +14,7 @@
 	}
 	img {
 		border: 3px solid $dark;
-		margin: 10px 0;
+		margin: 10px;
 		cursor: pointer;
 		width: 100px;
 		height: 100px;
@@ -30,7 +30,7 @@
 	.thumbnails {
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-between;
+		justify-content: center;
 		align-content: space-between;
 		margin-bottom: 40px;
 	}
