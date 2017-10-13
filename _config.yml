@@ -11,8 +11,8 @@ email: lapatronabakery@gmail.com
 phone: 305-242-4044
 address: '110 W. Mowry Drive Homestead, FL 33030'
 description: El Mejor pan Mexicano y Centroamericano del sur de la Florida. Aqui encontraras mas de 100 variedades y la deliciosa Rosca de Reyes!
-baseurl: "/la-patrona-bakery" # the subpath of your site, e.g. /blog
-url: "http://melvinopolis.github.io" # the base hostname & protocol for your site
+# baseurl: "/la-patrona-bakery" # the subpath of your site, e.g. /blog
+url: "http://www.lapatronabakery.com" # the base hostname & protocol for your site
 twitter_username: lapatronabakery
 fb_page: LaPatronaBakery
 
