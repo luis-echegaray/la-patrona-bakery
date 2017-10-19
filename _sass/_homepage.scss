@@ -1,3 +1,15 @@
+.hero {
+	text-align: center;
+	margin-top: 10px;
+	h1 {
+		margin-bottom: 5px;
+		color: $red;
+	}
+	p {
+		margin-bottom: 5px;
+	}
+}
+
 .home {
 	h1, 
 	h2 {

@@ -17,6 +17,13 @@ h1 {
     font-family: $scriptFont;
     color: $green;
 }
+.sr-text { 
+   clip: rect(1px, 1px, 1px, 1px); 
+   height: 1px; 
+   width: 1px; 
+   overflow: hidden; 
+   position: absolute !important;
+}
 
 /**
  * Site header
@@ -82,10 +89,10 @@ h1 {
         color: $dark;
         line-height: $base-line-height;
         font-family: $scriptFont;
-        font-size: 1.5em;
+        font-size: 1.45em;
         margin: 10px;
         position: relative;
-        top: 11px;
+        top: 9px;
         z-index: 999;
         &:hover,
         &.active {
@@ -215,7 +222,7 @@ h1 {
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 10%;
+    padding: $spacing-unit/2 5%;
     min-height: calc(100vh - 479px);
 }
 
