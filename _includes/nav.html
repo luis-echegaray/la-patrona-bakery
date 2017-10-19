@@ -5,6 +5,7 @@
 			<img src="{{ site.baseurl }}/img/up.png" alt="Up arrow" class="up">
 		</div>
 		<div class="links">
+			<a class="page-link" href="/">Inicio</a>
 			{% for my_page in site.pages %}
 		        {% if my_page.title %}
 		            <a {% if page.url contains my_page.url) %} class="page-link active" {% else %} class="page-link" {% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
