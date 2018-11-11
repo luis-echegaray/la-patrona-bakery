@@ -114,11 +114,13 @@ images:
     <div class="grid">
       {% for image in page.images %}
       <div class="cell">
-        <img
-          class="responsive-image"
-          src="{{ image.image_path }}"
-          alt="{{ image.title}}"
-        />
+        <a href="{{ image.image_path }}">
+          <img
+            class="responsive-image"
+            src="{{ image.image_path }}"
+            alt="{{ image.title}}"
+          />
+        </a>
       </div>
       {% endfor %}
     </div>
