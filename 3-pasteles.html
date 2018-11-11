@@ -1,0 +1,36 @@
+---
+layout: default
+title: Pasteles
+permalink: /pasteles
+images:
+  - image_path: /img/pandulce/decorando-tres-leche.jpg
+    title: Decorando Tres Leches
+  - image_path: /img/pandulce/tres-leche-fresa.jpg
+    title: Tres Leche Fresa
+  - image_path: /img/pandulce/tres-leche-nevera.jpg
+    title: Tres Leche Nevera
+  - image_path: /img/pandulce/tres-leche-rendondos.jpg
+    title: Tres Leche Redondos
+  - image_path: /img/pandulce/tres-leches-decorado.jpg
+    title: Tres leche decorado
+  - image_path: /img/pandulce/tres-leches-flor.jpg
+    title: Tres leches flor
+  - image_path: /img/pandulce/tres-leches-para-llevar.jpg
+    title: Tres Leches Para llevar
+---
+
+<div>
+  <div class="photo-gallery">
+    <div class="grid">
+      {% for image in page.images %}
+      <div class="cell">
+        <img
+          class="responsive-image"
+          src="{{ image.image_path }}"
+          alt="{{ image.title}}"
+        />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
