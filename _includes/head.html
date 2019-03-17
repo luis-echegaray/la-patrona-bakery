@@ -9,6 +9,21 @@
       window.location.protocol = "https";
   </script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-136390484-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-136390484-1");
+  </script>
+
   <title>
     {% if page.title %}
     {{ page.title }}
@@ -18,7 +33,9 @@
   </title>
   <meta
     name="description"
-    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+    content="{% if page.excerpt %}{{
+      page.excerpt | strip_html | strip_newlines | truncate: 160
+    }}{% else %}{{ site.description }}{% endif %}"
   />
 
   <!-- FONTS -->
